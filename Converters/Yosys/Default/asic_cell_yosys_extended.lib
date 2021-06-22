@@ -1,0 +1,22 @@
+library(demo) {
+	cell(IV) {
+		area: 0;
+		pin(A) { direction: input; }
+		pin(Z) { direction: output; function: "A'"; }
+	}
+	cell(XOR) {
+		area: 0;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A^B)"; }
+	}	
+	cell(AND) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A&B)"; }
+	}
+	
+
+
+}

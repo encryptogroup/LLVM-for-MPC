@@ -1,0 +1,7 @@
+[submodule "HyCC"]
+	path = HyCC
+	url = https://gitlab.com/securityengineering/HyCC.git
+[submodule "LLVM"]
+	path = LLVM
+	url = https://github.com/llvm/llvm-project.git
+	branch = release/12.x

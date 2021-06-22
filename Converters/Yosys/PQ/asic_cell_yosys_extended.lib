@@ -1,0 +1,67 @@
+library(demo) {
+	cell(IV) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(Z) { direction: output; function: "A'"; }
+	}
+	cell(XOR) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A^B)"; }
+	}
+	cell(XNOR) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A^B)'"; }
+	}	
+	cell(NOR) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A+B)'"; }
+	}	
+	cell(OR) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A+B)"; }
+	}	
+	cell(NAND) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A&B)'"; }
+	}	
+	cell(AND) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A&B)"; }
+	}
+	cell(NORN) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A+B')'"; }
+	}	
+	cell(ORN) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A+B')"; }
+	}	
+	cell(NANDN) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A&B')'"; }
+	}	
+	cell(ANDN) {
+		area: 10;
+		pin(A) { direction: input; }
+		pin(B) { direction: input; }
+		pin(Z) { direction: output; function: "(A&B')"; }
+	}
+}
